@@ -212,7 +212,7 @@ export const getProducts = createServerFn({ method: 'GET' }).handler(
 )
 
 export const getProduct = createServerFn({ method: 'GET' })
-  .validator((id: string) => id)
+  .inputValidator((id: string) => id)
   .handler(async ({ data: id }) => {
     const product = products.find((p) => p.id === id)
     if (!product) {
@@ -222,7 +222,7 @@ export const getProduct = createServerFn({ method: 'GET' })
   })
 
 export const createProduct = createServerFn({ method: 'POST' })
-  .validator((input: CreateProductInput) => input)
+  .inputValidator((input: CreateProductInput) => input)
   .handler(async ({ data: input }) => {
     const now = new Date().toISOString()
     const newProduct: Product = {
@@ -236,7 +236,7 @@ export const createProduct = createServerFn({ method: 'POST' })
   })
 
 export const updateProduct = createServerFn({ method: 'POST' })
-  .validator((data: { id: string; input: UpdateProductInput }) => data)
+  .inputValidator((data: { id: string; input: UpdateProductInput }) => data)
   .handler(async ({ data: { id, input } }) => {
     const index = products.findIndex((p) => p.id === id)
     if (index === -1) {
@@ -252,7 +252,7 @@ export const updateProduct = createServerFn({ method: 'POST' })
   })
 
 export const deleteProduct = createServerFn({ method: 'POST' })
-  .validator((id: string) => id)
+  .inputValidator((id: string) => id)
   .handler(async ({ data: id }) => {
     const index = products.findIndex((p) => p.id === id)
     if (index === -1) {
