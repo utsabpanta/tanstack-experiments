@@ -2,12 +2,12 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import {
   createProduct,
   deleteProduct,
-  fetchProduct,
-  fetchProducts,
+  getProduct,
+  getProducts,
   updateProduct,
-} from '../lib/api'
+} from '../lib/products.server'
 import { queryKeys } from '../lib/queryClient'
-import type { UpdateProductInput } from '../lib/types'
+import type { CreateProductInput, UpdateProductInput } from '../lib/types'
 
 /**
  * TanStack Query Hooks for Products
@@ -41,7 +41,7 @@ import type { UpdateProductInput } from '../lib/types'
 export function useProducts() {
   return useQuery({
     queryKey: queryKeys.products.all,
-    queryFn: fetchProducts,
+    queryFn: () => getProducts(),
   })
 }
 
@@ -64,7 +64,7 @@ export function useProducts() {
 export function useProduct(id: string | undefined) {
   return useQuery({
     queryKey: queryKeys.products.detail(id ?? ''),
-    queryFn: () => fetchProduct(id!),
+    queryFn: () => getProduct({ data: id! }),
     // Only run the query if we have an ID
     enabled: !!id,
   })
@@ -91,7 +91,7 @@ export function useCreateProduct() {
   const queryClient = useQueryClient()
 
   return useMutation({
-    mutationFn: createProduct,
+    mutationFn: (input: CreateProductInput) => createProduct({ data: input }),
     onSuccess: () => {
       // Invalidate the products list to refetch fresh data
       queryClient.invalidateQueries({ queryKey: queryKeys.products.all })
@@ -123,7 +123,7 @@ export function useUpdateProduct() {
 
   return useMutation({
     mutationFn: ({ id, data }: { id: string; data: UpdateProductInput }) =>
-      updateProduct(id, data),
+      updateProduct({ data: { id, input: data } }),
     onSuccess: (_data, variables) => {
       // Invalidate both the list and the specific product
       queryClient.invalidateQueries({ queryKey: queryKeys.products.all })
@@ -159,7 +159,7 @@ export function useDeleteProduct() {
   const queryClient = useQueryClient()
 
   return useMutation({
-    mutationFn: deleteProduct,
+    mutationFn: (id: string) => deleteProduct({ data: id }),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: queryKeys.products.all })
     },
