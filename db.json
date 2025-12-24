@@ -1,0 +1,169 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Bluetooth Headphones",
+      "description": "Premium noise-canceling headphones with 30-hour battery life and comfortable over-ear design.",
+      "price": 149.99,
+      "category": "Electronics",
+      "stock": 45,
+      "sku": "WBH-001",
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2024-03-20T14:22:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Ergonomic Office Chair",
+      "description": "Adjustable lumbar support, breathable mesh back, and 4D armrests for all-day comfort.",
+      "price": 299.99,
+      "category": "Furniture",
+      "stock": 23,
+      "sku": "EOC-002",
+      "createdAt": "2024-02-01T09:00:00Z",
+      "updatedAt": "2024-03-15T11:45:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard RGB",
+      "description": "Cherry MX switches, per-key RGB lighting, and aircraft-grade aluminum frame.",
+      "price": 129.99,
+      "category": "Electronics",
+      "stock": 78,
+      "sku": "MKR-003",
+      "createdAt": "2024-01-20T14:15:00Z",
+      "updatedAt": "2024-02-28T16:30:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Standing Desk Converter",
+      "description": "Height-adjustable desktop riser with smooth gas spring lift and spacious work surface.",
+      "price": 199.99,
+      "category": "Furniture",
+      "stock": 15,
+      "sku": "SDC-004",
+      "createdAt": "2024-02-10T08:45:00Z",
+      "updatedAt": "2024-03-10T13:20:00Z"
+    },
+    {
+      "id": "5",
+      "name": "USB-C Hub 7-in-1",
+      "description": "Multi-port adapter with HDMI, USB 3.0, SD card reader, and 100W PD charging.",
+      "price": 49.99,
+      "category": "Electronics",
+      "stock": 120,
+      "sku": "UCH-005",
+      "createdAt": "2024-01-25T11:00:00Z",
+      "updatedAt": "2024-03-05T09:15:00Z"
+    },
+    {
+      "id": "6",
+      "name": "Minimalist Desk Lamp",
+      "description": "LED desk lamp with adjustable color temperature and brightness, USB charging port.",
+      "price": 59.99,
+      "category": "Lighting",
+      "stock": 67,
+      "sku": "MDL-006",
+      "createdAt": "2024-02-05T15:30:00Z",
+      "updatedAt": "2024-03-12T10:00:00Z"
+    },
+    {
+      "id": "7",
+      "name": "Wireless Mouse Pro",
+      "description": "Precision optical sensor, ergonomic design, and silent click technology.",
+      "price": 39.99,
+      "category": "Electronics",
+      "stock": 89,
+      "sku": "WMP-007",
+      "createdAt": "2024-01-18T12:20:00Z",
+      "updatedAt": "2024-02-25T14:40:00Z"
+    },
+    {
+      "id": "8",
+      "name": "Monitor Arm Mount",
+      "description": "Full-motion single monitor arm with cable management and 360° rotation.",
+      "price": 79.99,
+      "category": "Furniture",
+      "stock": 34,
+      "sku": "MAM-008",
+      "createdAt": "2024-02-12T10:10:00Z",
+      "updatedAt": "2024-03-08T16:55:00Z"
+    },
+    {
+      "id": "9",
+      "name": "Webcam 4K Pro",
+      "description": "Ultra HD webcam with auto-focus, built-in microphone, and privacy shutter.",
+      "price": 119.99,
+      "category": "Electronics",
+      "stock": 52,
+      "sku": "WCP-009",
+      "createdAt": "2024-01-30T13:45:00Z",
+      "updatedAt": "2024-03-18T11:30:00Z"
+    },
+    {
+      "id": "10",
+      "name": "Laptop Stand Aluminum",
+      "description": "Portable aluminum laptop stand with adjustable height and ventilation design.",
+      "price": 34.99,
+      "category": "Accessories",
+      "stock": 145,
+      "sku": "LSA-010",
+      "createdAt": "2024-02-08T09:30:00Z",
+      "updatedAt": "2024-03-01T15:20:00Z"
+    },
+    {
+      "id": "11",
+      "name": "Desk Organizer Set",
+      "description": "5-piece bamboo desk organizer with pen holder, phone stand, and storage trays.",
+      "price": 29.99,
+      "category": "Accessories",
+      "stock": 88,
+      "sku": "DOS-011",
+      "createdAt": "2024-02-15T14:00:00Z",
+      "updatedAt": "2024-03-14T12:10:00Z"
+    },
+    {
+      "id": "12",
+      "name": "Smart Power Strip",
+      "description": "WiFi-enabled power strip with 4 outlets, 4 USB ports, and voice control support.",
+      "price": 44.99,
+      "category": "Electronics",
+      "stock": 5,
+      "sku": "SPS-012",
+      "createdAt": "2024-01-22T16:25:00Z",
+      "updatedAt": "2024-03-19T08:45:00Z"
+    },
+    {
+      "id": "13",
+      "name": "Acoustic Desk Divider",
+      "description": "Sound-absorbing panel for privacy and noise reduction in open workspaces.",
+      "price": 89.99,
+      "category": "Furniture",
+      "stock": 3,
+      "sku": "ADD-013",
+      "createdAt": "2024-02-20T11:15:00Z",
+      "updatedAt": "2024-03-16T17:00:00Z"
+    },
+    {
+      "id": "14",
+      "name": "Cable Management Kit",
+      "description": "Complete kit with cable clips, sleeves, ties, and under-desk cable tray.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 200,
+      "sku": "CMK-014",
+      "createdAt": "2024-02-03T08:00:00Z",
+      "updatedAt": "2024-02-28T10:30:00Z"
+    },
+    {
+      "id": "15",
+      "name": "Ring Light 12-inch",
+      "description": "Professional LED ring light with tripod stand, phone holder, and 10 brightness levels.",
+      "price": 54.99,
+      "category": "Lighting",
+      "stock": 41,
+      "sku": "RLT-015",
+      "createdAt": "2024-02-18T13:30:00Z",
+      "updatedAt": "2024-03-11T09:45:00Z"
+    }
+  ]
+}
